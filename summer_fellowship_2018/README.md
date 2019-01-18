@@ -8,10 +8,10 @@ The data comes from Workshop on Autonomous Driving (wad.ai) challenge
 
 https://www.kaggle.com/c/cvpr-2018-autonomous-driving
 
-File information
+## File information
 
-How_to_Google_Drive_in_Colab.ipynb - helped the team figure out porting our data saved on Google Drive
+[How_to_Google_Drive_in_Colab](How_to_Google_Drive_in_Colab.ipynb) - helped the team figure out porting our data saved on Google Drive
 
-WAD_Autoencoder_v2.ipynb - the training
+[WAD_Autoencoder_v2](WAD_Autoencoder_v2.ipynb) - the training
 
-AllTogetherNow.ipynb - combining the trained encoder with Mask RCNN. note that I trained two versions. I did not get the loss function right for the first few times until I learned normalizing was important. Regardless, both “versions” ended up producing the same effect. Interestingly, there was only one car duplicated (perhaps it was fast).
+[AllTogetherNow](AllTogetherNow.ipynb) - combining the trained encoder with Mask RCNN. note that I trained two versions. I did not get the loss function right for the first few times until I learned normalizing was important. Regardless, both “versions” ended up producing the same effect. Interestingly, there was only one car duplicated (perhaps it was fast).
