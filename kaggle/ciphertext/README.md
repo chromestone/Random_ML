@@ -28,4 +28,4 @@ I thought about triplet loss and then started first with testing cosine proximit
 
 kaggle_cipher_cosine.ipynb
 
-I come back and see how the facenet model with softmax and nothing pretrained works on this dataset.
+Since I already built a the facenet model for 1D, let's do a softmax with nothing pretrained. Fingers crossed.
