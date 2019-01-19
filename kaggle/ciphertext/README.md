@@ -29,3 +29,9 @@ I thought about triplet loss because I one hot encoded the text essentially into
 [kaggle_cipher_cosine](kaggle_cipher_cosine.ipynb)
 
 Since I already built a the facenet model for 1D, let's do a softmax with nothing pretrained instead. Fingers crossed.
+
+At first: Oh no I maybe I had set the batch size too big. Lowered from 32, the default, to 8.
+
+Then: Oh no I used tf.losses.softmax_cross_entropy wrong! I applied a softmax activation at the end when I should not have. Oh well, retrain the 2hrs total I lost.
+
+Maybe I shouldn't have written a custom loss? However, the architecture kind of requires it. I split the last layer into 4 where they are trained on 1 out of the 4 difficulties while other layers are shared.
