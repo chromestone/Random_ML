@@ -35,3 +35,13 @@ At first: Oh no I maybe I had set the batch size too big. Lowered from 32, the d
 Then: Oh no I used tf.losses.softmax_cross_entropy wrong! I applied a softmax activation at the end when I should not have. Oh well, retrain the 2hrs total I lost.
 
 Maybe I shouldn't have written a custom loss? However, the architecture kind of requires it. I split the last layer into 4 where they are trained on 1 out of the 4 difficulties while other layers are shared.
+
+All these models seem to just stop improving after a while for some reason.
+
+I trained an additional 20 epochs on AWS. (Total of 42 epochs)
+
+[kaggle_cipher_share_train](kaggle_cipher_share_train.ipynb)
+
+Perhaps I could try to use a generator and train the same proportion of each difficulty every batch?
+
+Well, that's all folks.
