@@ -44,8 +44,22 @@ I trained an additional 20 epochs on AWS. (Total of 42 epochs)
 
 Perhaps I could try to use a generator and train the same proportion of each difficulty every batch?
 
-The training yielded an accuracy of 0.07441360237631875.
+The training yielded an accuracy of 0.07441360237631875 on the training dataset.
 
 This is better than guessing of 0.05 but somewhat worse than the about 0.8 something accuracy acheived from a pretrained inception resnet v2 with hot encoded inputs.
+
+For the test it turned out:
+
+The model predicted (using argmax)
+
+0	23171
+
+2	22113
+
+17	45838
+
+I feel betrayed (by the model and myself). Somehow this model likes these three numbers the most. 
+
+In the end the model likely overfitted and this was very bad. Test score came out to be 0.0178. Maybe I should have gone with the image inception network.
 
 Well, that's all folks.
