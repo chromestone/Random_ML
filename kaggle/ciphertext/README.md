@@ -44,4 +44,8 @@ I trained an additional 20 epochs on AWS. (Total of 42 epochs)
 
 Perhaps I could try to use a generator and train the same proportion of each difficulty every batch?
 
+The training yielded an accuracy of 0.07441360237631875.
+
+This is better than guessing of 0.05 but somewhat worse than the about 0.8 something accuracy acheived from a pretrained inception resnet v2 with hot encoded inputs.
+
 Well, that's all folks.
