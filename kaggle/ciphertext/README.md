@@ -60,6 +60,10 @@ The model predicted (using argmax)
 
 I feel betrayed (by the model and myself). Somehow this model likes these three numbers the most. 
 
+After analyzing the number of examples per newsgroup I found 2 and 17 were the top two😱 Just like I had suspected! So maybe If I gave equal representation then the model would be forced to learn "real" patterns.
+
+Makes sense. If the task is too hard, the model just becomes lazy and defaults to the best guess strategy. It's like finding out your teacher is more like to make the answer C.
+
 In the end the model likely overfitted and this was very bad. Test score came out to be 0.0178. Maybe I should have gone with the image inception network.
 
 Well, that's all folks.
