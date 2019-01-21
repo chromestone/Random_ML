@@ -11,6 +11,9 @@ https://www.kaggle.com/c/cvpr-2018-autonomous-driving
 ## File information
 
 [How_to_Google_Drive_in_Colab](How_to_Google_Drive_in_Colab.ipynb) - helped the team figure out porting our data saved on Google Drive
+(if you're not on Google Colab, here are the instructions for the general case
+https://medium.com/@umdfirecoml/a-step-by-step-guide-on-how-to-download-your-google-drive-data-to-your-jupyter-notebook-using-the-52f4ce63c66c
+)
 
 [WAD_Autoencoder_v2](WAD_Autoencoder_v2.ipynb) - the training
 
