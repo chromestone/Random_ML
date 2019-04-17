@@ -119,7 +119,7 @@ def customLoss(yTrue,yPred):
 model.compile(loss=customLoss, optimizer='adam', metrics=['accuracy'])
 
 
-model.load_weights('logs/weights.17-2.30.hdf5')
+#model.load_weights('logs/weights.17-2.30.hdf5')
 
 checkpt = KC.ModelCheckpoint('./logs/weights.{epoch:02d}-{val_loss:.2f}.hdf5', monitor='val_loss', verbose=0, save_best_only=False, save_weights_only=True, mode='auto', period=1)
 
