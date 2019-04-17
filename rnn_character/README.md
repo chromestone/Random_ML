@@ -3,6 +3,8 @@
 So can this RNN be Shakespeare?
 Kinda... You can see for yourself.
 
+Keep in mind the ultimate.py is the training script that ran on a 16 CPU computer. Adjustments likely are needed.
+
 Data:
 
 http://cs.stanford.edu/people/karpathy/char-rnn/shakespear.txt
