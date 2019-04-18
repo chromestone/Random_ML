@@ -97,9 +97,9 @@ class DataGenerator(tensorflow.keras.utils.Sequence):
     return input_arr, target_arr
 
   def on_epoch_end(self):
-      'Updates indexes after each epoch'
+    'Updates indexes after each epoch'
 
-      np.random.shuffle(self.picker)
+    np.random.shuffle(self.picker)
 
 train_gen = DataGenerator(char2id, text[:-VAL_SIZE], batch_size = BATCH_SIZE)
 val_gen = DataGenerator(char2id, text[-VAL_SIZE:], batch_size = BATCH_SIZE)
