@@ -13,7 +13,7 @@ import tensorflow.keras.callbacks as KC
 VERBOSE = 2
 
 # minus 1
-EPOCH_START = 17
+EPOCH_START = 0
 EPOCH_END = 256
 
 BATCH_SIZE = 32
@@ -109,6 +109,10 @@ input_layer = KL.Input((DataGenerator.ARBITRARY_LENGTH, len(char2id)), name="the
 x = KL.LSTM(62, return_sequences=True, name="intermediate")(input_layer)
 # used to do softmax but experimenting here
 x = KL.LSTM(62, activation="relu", name="the_output")(x)
+
+#x = KL.LSTM(62, return_sequences=True, kernel_regularizer=regularizers.l2(0.01), name="intermediate")(input_layer)
+# used to do softmax but experimenting here
+#x = KL.LSTM(62, activation="relu", kernel_regularizer=regularizers.l2(0.01), name="the_output")(x)
 
 model = Model(input_layer, x)
 
